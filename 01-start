@@ -7,6 +7,7 @@ export CLASSPATH=$DERBY_INSTALL/lib/derby.jar:$DERBY_INSTALL/lib/derbytools.jar:
 
 下载的derby
 https://db.apache.org/derby/papers/DerbyTut/install_software.html
+
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home
 export DERBY_HOME=/Users/yong/Gaff/libs/db-derby-10.13.1.1-bin
 export DERBY_INSTALL=/Users/yong/Gaff/libs/db-derby-10.13.1.1-bin
@@ -20,3 +21,5 @@ disconnect;
 connect 'jdbc:derby:/Users/yong/Gaff/libs/db-derby-10.13.1.1-bin/demo/databases/yong;create=true';
 
 connect 'jdbc:derby:/Users/yong/Gaff/libs/db-derby-10.13.1.1-bin/demo/databases/yong';
+
+run '/Users/yong/learn/Derby/01.sql';
