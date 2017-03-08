@@ -1,0 +1,12 @@
+官网： https://db.apache.org/derby/docs/10.3/devguide/cdevcsecure42374.html
+翻译要点：
+1） 默认的数据库是不授权的！需要自己去开启。
+2） 用户的权限范围有：系统级 > 数据库级，显然前者权限大
+
+http://db.apache.org/derby/docs/10.2/tuning/ctunsetprop11108.html
+http://db.apache.org/derby/docs/10.2/tuning/ctunsetprop13074.html
+http://db.apache.org/derby/docs/10.2/tuning/ctunsetprop24222.html
+配置文件： derby.properties
+该文件默认不存在，可以存放在不同的地方，代表不同的范围：系统级 > 数据库级 > ?
+系统级derby.properties存放在哪？执行 ij 命令所在的目录，或者自定义文件名：
+用法：java org.apache.derby.tools.ij [-p propertyfile] [inputfile]
